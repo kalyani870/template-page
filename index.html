@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>coversion of light to dark mode💡🌑</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+       .text-toggle-div{
+        background-color: gold;
+        display: block;
+        height:400px;
+        width:500px;
+        margin:auto;
+        margin-top: 20px;
+        border-radius: 10px ;
+        }
+        .text-toggle-div-changes{
+        background-color: black;
+        display: block;
+        height:400px;
+        width:500px;
+        margin:auto;
+        margin-top: 20px;
+        border-radius: 10px ;
+        }
+       .btn{
+          display: inline;
+           border-radius: 15px;
+           margin-left: 500px;
+           margin-top: 15px;
+           cursor: pointer;
+        }
+        .btn:hover{
+            box-shadow: 1px 1px 3px 5px  rgb(233, 227, 227);
+        }
+       
+        .btn2{
+          display: inline;
+           border-radius: 15px;
+           margin-left: 300px;
+           margin-top: 15px;
+           cursor: pointer;
+        }
+        .btn2:hover{
+            box-shadow: 1px 1px 3px 2px  black;
+        }
+       
+    </style>
+</head>
+<body>
+    <button class="btn"  onclick="lightmode()">light mode💡</button>
+    <button  class="btn2"  onclick="darkmode()">dark mode🌑</button>
+    <div id="text-toggle-div"></div>
+
+
+    <script>
+        function lightmode(){
+        const element = document.getElementById("text-toggle-div");
+         element.className = "text-toggle-div" ;
+        }
+
+        function darkmode(){
+        const element = document.getElementById("text-toggle-div");
+         element.className = "text-toggle-div-changes" ;
+        }
+    </script>
+</body>
+</html>
